@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Producer.Kafka", "Codeizi.Producer.Kafka\Codeizi.Producer.Kafka.csproj", "{840302B5-29EF-45D2-A3D7-D0BA272FF099}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2FA820C7-6BBD-4FA0-BBBE-724B2BA59CC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Producer.Functional.Test", "..\..\test\Codeizi.Producer.Functional.Test\Codeizi.Producer.Functional.Test.csproj", "{A07146CB-92EE-4D04-AB33-A6A45AB7538F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{840302B5-29EF-45D2-A3D7-D0BA272FF099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840302B5-29EF-45D2-A3D7-D0BA272FF099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840302B5-29EF-45D2-A3D7-D0BA272FF099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840302B5-29EF-45D2-A3D7-D0BA272FF099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07146CB-92EE-4D04-AB33-A6A45AB7538F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07146CB-92EE-4D04-AB33-A6A45AB7538F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07146CB-92EE-4D04-AB33-A6A45AB7538F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07146CB-92EE-4D04-AB33-A6A45AB7538F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A07146CB-92EE-4D04-AB33-A6A45AB7538F} = {2FA820C7-6BBD-4FA0-BBBE-724B2BA59CC2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E93CE1E9-4644-4F3D-9CDB-95DA66876207}
+	EndGlobalSection
+EndGlobal
