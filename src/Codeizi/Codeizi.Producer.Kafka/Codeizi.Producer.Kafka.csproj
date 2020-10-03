@@ -2,7 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <OutputType>Library</OutputType>
+    <PackageId>Codeizi.Producer.Kafka</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Douglas Mendes</Authors>
+    <Company>Codeizi.com.br</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JDouglasMendes/codeizi-producer-kafka</RepositoryUrl>
+    <PackageReleaseNotes>First version, basic use is implementation.</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Description>Facilitates production and messaging for Kafka.</Description>
+    <PackageIcon>ico.png</PackageIcon>
+    <Copyright>Codeizi</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,4 +24,11 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\..\ico.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
