@@ -7,6 +7,6 @@ namespace Codeizi.Producer.Kafka
         Task SendMessage<T>(T message) where T : class;
         Task SendMessage<T>(params T[] messages) where T : class;
         Task SendMessage<T>(string topic, T message) where T : class;
-        Task SendMessage<T>(string topic, params T[] message) where T : class;
+        Task SendMessage<T>(string topic, params T[] messages) where T : class;
     }
 }

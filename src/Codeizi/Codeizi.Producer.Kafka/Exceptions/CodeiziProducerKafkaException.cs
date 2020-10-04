@@ -2,11 +2,13 @@
 
 namespace Codeizi.Producer.Kafka
 {
+    [Serializable]
     public class CodeiziProducerKafkaException : Exception
     {
         public CodeiziProducerKafkaException(string message)
             : base(message)
         { }
+
         public CodeiziProducerKafkaException(
             string message,
             string source,
@@ -22,6 +24,12 @@ namespace Codeizi.Producer.Kafka
             string message,
             Exception innerException)
             : base(message, innerException)
+        { }
+
+        protected CodeiziProducerKafkaException(
+            System.Runtime.Serialization.SerializationInfo serializationInfo,
+            System.Runtime.Serialization.StreamingContext streamingContext)
+            : base(serializationInfo, streamingContext)
         { }
     }
 }
