@@ -44,8 +44,7 @@ namespace Codeizi.Producer.Kafka
             var message = JsonConvert.SerializeObject(t);
             try
             {
-                var sendResult = await producer
-                                    .ProduceAsync(topic, new Message<Null, string> { Value = message });
+                await producer.ProduceAsync(topic, new Message<Null, string> { Value = message });
             }
             catch (ProduceException<Null, string> e)
             {

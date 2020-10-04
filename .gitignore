@@ -5,3 +5,4 @@ test/Codeizi.Producer.Functional.Test/bin/*
 test/Codeizi.Producer.Functional.Test/obj/*
 src/Codeizi/.vs/*
 Sonar/.vs/Sonar/v16/.suo
+Sonar/.vs/Sonar/DesignTimeBuild/.dtbcache.v2
