@@ -4,3 +4,4 @@ src/Codeizi/Codeizi.Producer.Kafka/obj/*
 test/Codeizi.Producer.Functional.Test/bin/*
 test/Codeizi.Producer.Functional.Test/obj/*
 src/Codeizi/.vs/*
+Sonar/.vs/Sonar/v16/.suo
