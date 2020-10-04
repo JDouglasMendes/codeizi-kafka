@@ -4,6 +4,7 @@
 
 ![GitHub](https://img.shields.io/badge/Codeizi-Framework-blueviolet)
 ![GitHub](https://img.shields.io/github/license/JDouglasMendes/codeizi-producer-kafka)
+![publish to nuget](https://github.com/JDouglasMendes/codeizi-producer-kafka/workflows/publish%20to%20nuget/badge.svg?branch=master)
 
 ### Instalação
 
