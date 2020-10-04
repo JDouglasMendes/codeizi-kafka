@@ -1,4 +1,5 @@
-﻿using Codeizi.Producer.Kafka;
+﻿using Codeizi.Producer.Functional.Test.ViewModels;
+using Codeizi.Producer.Kafka;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -16,7 +17,17 @@ namespace Codeizi.Producer.Functional.Test.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync(string message)
         {
-            await producer.SendMessage("Topic_Test", new { Message = message });
+            await producer.SendMessage(new  MessageViewModel { Message = message });
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("MessageByTopic")]
+        public async Task<IActionResult> PostAsync(
+            string topic,
+            string message)
+        {
+            await producer.SendMessage(topic, new { Message = message });
             return Ok();
         }
     }

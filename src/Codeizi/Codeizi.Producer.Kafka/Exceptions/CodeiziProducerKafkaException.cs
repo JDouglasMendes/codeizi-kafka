@@ -18,8 +18,10 @@ namespace Codeizi.Producer.Kafka
         {
         }
 
-        public CodeiziProducerKafkaException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
+        public CodeiziProducerKafkaException(
+            string message,
+            Exception innerException)
+            : base(message, innerException)
+        { }
     }
 }
