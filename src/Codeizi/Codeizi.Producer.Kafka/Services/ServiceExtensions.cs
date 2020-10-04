@@ -10,7 +10,9 @@ namespace Codeizi.Producer.Kafka
             this IServiceCollection services,
             string server)
         {
-            services.AddScoped(typeof(IProducerKafka), x => new ProducerKafka(server));
+            services.
+                AddScoped(typeof(IProducerKafka),
+                x => new ProducerKafka(server));
             return services;
         }
 
@@ -26,7 +28,8 @@ namespace Codeizi.Producer.Kafka
             this IServiceCollection services,
             IConfiguration configuration)
         {
-            var server = configuration.GetSection("KafkaServer")?.Value ?? throw new ArgumentException($"Not found key 'KafkaServer' in {configuration}");
+            var server = configuration.
+                GetSection("KafkaServer")?.Value ?? throw new ArgumentException($"Not found key 'KafkaServer' in {configuration}");
             return AddProducerKafka(services, server);
         }
     }
